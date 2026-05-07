@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rides</title>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <body>  
+         <header>
+            <a href= "index.html">
+             <img src="Images/home.png" alt="home">
+             </a>
+        </header>
+        <img class="banner" src="Images/banner2.png" alt="rides">
+        <form>
+            <div class="container">  
+                <div class="button">
+                    <a href="confirm.html"> 
+                        <img src="Images/car.png" alt="car">
+                        $10.15  <span class="subheading"> Arrives in 3 min. </span>
+
+                    </a> 
+                </div> 
+                <div class="button">
+                    <a href="confirm.html"> 
+                    <img src="Images/car.png" alt="car">
+                     $13.67 <span class="subheading"> Arrives in 5 min. </span>
+                     
+                    </a> 
+                </div> 
+                <div class="button" id="responder">
+                    <a>
+                   <img src="Images/car.png" alt="car">
+                        $15.20 <span class="subheading"> Arrives in 1 min. </span>
+                    </a> 
+                </div> 
+            </div>
+        </form>
+            <script>
+                const responder = document.getElementById("responder");
+                responder.addEventListener("click",() => {
+                alert ("Insufficient funds, cannot order this ride.");
+                });
+            </script>
+        <buttonback>
+            <a href="index.html" >
+                <p class="buttonback">Back</p>
+            </a> 
+        </buttonback>
+    </body>
+</html>
